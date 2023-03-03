@@ -1,0 +1,43 @@
+@import "../../App.scss";
+.registration {
+    &-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-box {
+        padding: 50px;
+        background-color: $accentColor;
+        max-width: 500px;
+        min-width: 316px;
+        min-height: 335px;
+        max-height: fit-content;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    &-header {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    &-form-group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    &-submit-group {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &-register {
+        padding-top: 30px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}

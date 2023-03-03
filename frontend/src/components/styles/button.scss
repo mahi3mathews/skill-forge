@@ -1,0 +1,21 @@
+@import "../../App.scss";
+.button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    &.transparent {
+        background-color: transparent;
+    }
+    &.primary {
+        background-color: $primaryColor;
+        color: $backgroundColor;
+    }
+    &.primary-accent {
+        background-color: $primaryColor;
+        color: $accentColor;
+    }
+}

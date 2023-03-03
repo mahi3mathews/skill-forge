@@ -1,0 +1,75 @@
+@import "../../App.scss";
+.add-training {
+    max-width: 500px;
+    &-form-grp {
+        margin: 25px 0;
+    }
+    &-dropdown {
+        cursor: pointer;
+    }
+    &-range {
+        width: 100%;
+        background-color: black;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+    }
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        width: 300px;
+        height: 5px;
+        background: $accentColor;
+        border: none;
+        border-radius: 3px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: $primaryColor;
+        margin-top: -6px;
+    }
+
+    input[type="range"]:focus {
+        outline: none;
+    }
+
+    input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: $accentColor;
+    }
+    &-check {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        input:checked {
+            background-color: $accentColor;
+        }
+        .form-check-input {
+            padding: 10px;
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        .form-check-label {
+            margin: 4px 9px 0;
+        }
+    }
+
+    &-date {
+        width: 100%;
+        .react-date-picker__wrapper {
+            border: none;
+            border-bottom: 1px solid $primaryColor;
+            padding: 15px;
+        }
+    }
+    &-submit {
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+        flex-direction: column;
+    }
+}

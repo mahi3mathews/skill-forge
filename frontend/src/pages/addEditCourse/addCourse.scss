@@ -1,0 +1,35 @@
+@import "../../App.scss";
+.add-course {
+    max-width: 500px;
+    &-form-grp {
+        padding: 10px 0;
+    }
+    &-header {
+        padding: 0 0 20px;
+    }
+    &-submit-grp {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .add-skill {
+        &-menu {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            width: inherit;
+        }
+        &-item {
+            display: flex;
+            background-color: $accentColor;
+            border-radius: 100px;
+            padding: 10px;
+            align-items: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        &-submit {
+            padding: 10px;
+        }
+    }
+}

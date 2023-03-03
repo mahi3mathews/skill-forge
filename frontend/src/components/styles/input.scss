@@ -1,0 +1,21 @@
+@import "../../App.scss";
+.input {
+    &-container {
+        display: flex;
+        border-bottom: 1px solid $primaryColor;
+        justify-content: space-between;
+    }
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    &::placeholder {
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 16px;
+        color: $primaryColor;
+    }
+    border: none;
+    background-color: transparent;
+    &:focus-visible {
+        outline: none;
+    }
+}

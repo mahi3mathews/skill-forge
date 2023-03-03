@@ -1,0 +1,28 @@
+@import "../../App.scss";
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    &-title {
+        flex: 1;
+        color: $accentColor;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    &-link-container {
+        flex: 2;
+    }
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        color: $accentColor;
+        a {
+            color: $accentColor;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
