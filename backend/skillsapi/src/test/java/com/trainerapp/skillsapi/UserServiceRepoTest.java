@@ -49,10 +49,7 @@ public class UserServiceRepoTest {
 
     User testUser= new User(new ObjectId(),"USER_ID2331","User test123", "user@test.com", "12345678900", "ATTENDEE", new Date(), new Date(), "test_user");
 
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.initMocks(this);
-    }
+
     @Test
     @Rollback(false)
     public void getAllUsersTest() throws FileNotFoundException {
@@ -101,11 +98,6 @@ public class UserServiceRepoTest {
             userService.getUser("invalidUserId");
         });
     }
-
-    @Test
-    void contextLoads() {
-    }
-
 
 
 }

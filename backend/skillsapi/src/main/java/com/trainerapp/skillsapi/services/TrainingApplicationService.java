@@ -8,7 +8,8 @@ import java.util.Map;
  * Training interface which declared all the required functionalities
  *  It represents the model in the MVC architecture.
  *  It represents the service layer in the layered architecture.
- * It implements low coupling pattern of the GRASP patterns as it is not dependent on other classes and has low coupling with the repository as it only declares the methods to be used.
+ * It implements low coupling pattern of the GRASP patterns as it is not dependent on other classes
+ * and has low coupling with the repository as it only declares the methods to be used.
  * It implements high cohesion of GRASP pattern as it handles only training-application related operations.
  */
 public interface TrainingApplicationService {

@@ -17,7 +17,8 @@ import java.util.List;
 /**
  * APPLICATION controller is used to handle all API REST calls from all users to the system including the admin
  * It represents the presentation layer.
- * It implements the GRASP Controller pattern as it takes the request from the user in the presentation layer in the application and communicates with the appropriate service layer that uses the DAO layer to update or read the database
+ * It implements the GRASP Controller pattern as it takes the request from the user in the presentation layer in the
+ * application and communicates with the appropriate service layer that uses the DAO layer to update or read the database
  * It represents the controller from the MVC architecture by managing the user input and returning the output from the database to be displayed.
  * It implements the creator pattern of GRASP patterns as it creates new users.
  */
@@ -26,7 +27,7 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 public class ApplicationController {
     /**
-     * User service is used to login and register a user to the system.
+     * User service is used to log in and register a user to the system.
      * @Qualifier is used to mention which implementation to access.
      * TrainingService interface is used with the AdminTrainingServiceImpl implementation.
      */

@@ -23,7 +23,6 @@ import java.util.*;
 @Service
 public class UserServiceImpl implements UserService{
 
-
     PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     @Autowired
     private UserRepository userRepository;

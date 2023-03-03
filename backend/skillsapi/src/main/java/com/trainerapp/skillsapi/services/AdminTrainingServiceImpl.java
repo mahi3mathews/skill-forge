@@ -18,8 +18,11 @@ import java.util.UUID;
  * It represents the model in the MVC architecture.
  * It represents the service layer in the layered architecture.
  * It implements the creator pattern of the GRASP patterns as it handle creation and updates of the training object.
- * It implements the Don’t Talk to Strangers pattern of the GRASP patterns as it ensures the implementation of TrainingRepository functionalities are hidden from external entities.
+ * It implements the Don’t Talk to Strangers pattern of the GRASP patterns as it ensures the implementation
+ * of TrainingRepository functionalities are hidden from external entities.
  * It implements the information expert as it has access to training repository and can create, update and retrieve training.
+ * It implements the indirection pattern of GRASP patterns as it implements the Training Service interface and
+ * provides an abstraction layer between the controller and the data access layer.
  */
 @Service("adminTrainingService")
 public class AdminTrainingServiceImpl implements TrainingService {
